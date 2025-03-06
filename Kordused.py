@@ -7,9 +7,20 @@ if 1 <= n <= 9:
 ( o o )  
  ! = !/)  
 '''
-    print((tigr + '  ') * n)  
+    print(tigr  * n)  
 else:
     print('Seda ei saa teha! Sisestage number vahemikus 1 kuni 9.')
+#V4 1 ül(второй вариант)
+
+n=int(input("Sisestage number vahemikus 1 kuni 9:"))
+for i in range(n):
+    print(" ^---^  ",end="  ")
+print( )
+for i in range(n):
+    print("( o o )",end="   ")
+print( )
+for i in range(n):
+    print("! = !/)",end="   ")
 #ül 2
 kraad = int(input('kraad'))
 n = int(input('sise num'))
