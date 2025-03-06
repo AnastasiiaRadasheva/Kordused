@@ -4,7 +4,7 @@
 try:
     n = int(input('Sisesta kui palju kordi (1-9): '))
 
-    if 1 <= n <= 9:
+    if n > 1 or n < 9:
         tigr = ''' ^---^  
 ( o o )  
  ! = !/)  
