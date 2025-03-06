@@ -1,5 +1,6 @@
 #Kontrolltöö "Kordused"
-#V4 1 ül
+#V4
+# 1 ül
 n = int(input('Sisesta kui palju kordi (1-9): '))
 
 if 1 <= n <= 9:
@@ -10,8 +11,7 @@ if 1 <= n <= 9:
     print(tigr  * n)  
 else:
     print('Seda ei saa teha! Sisestage number vahemikus 1 kuni 9.')
-#V4 1 ül(второй вариант)
-
+# 1 ül(второй вариант)
 n=int(input("Sisestage number vahemikus 1 kuni 9:"))
 for i in range(n):
     print(" ^---^  ",end="  ")
