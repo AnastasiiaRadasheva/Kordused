@@ -1,6 +1,7 @@
 #Kontrolltöö "Kordused"
 #V4
 #1
+#Напишите программу, которая по данному числу n от 1 до 9 выводит на экран n зверьков.
 try:
     n = int(input('Sisesta kui palju kordi (1-9): '))
 
@@ -25,6 +26,7 @@ print( )
 for i in range(n):
     print("! = !/)",end="   ")
 #ül 2
+#Вывести степени натуральных чисел, не превосходящие данного числа n*100. Пользователь задает показатель степени и число n.
 kraad = int(input('kraad'))
 n = int(input('sise num'))
 maxnum = n * 100
@@ -35,6 +37,7 @@ for i in range(1, maxnum+1):
     else:
         print(f"{n}^{kraad} = {tulemus}")
 #ül 3
+#Вывести степени натуральных чисел, не превосходящие данного числа n*100. Пользователь задает показатель степени и число n.
 import random
 
 opilased = random.randint(5, 30)  
@@ -50,11 +53,15 @@ print(f"Kõik õpilased: {opilased}")
 print(f"Minimaalne hinne: {minhinn}")
 print(f"Maksimaalne hinne: {maxhinn}")
 #ül 4
+#Одноклеточная амеба каждые 3 часа делится на 2 клетки. Определить, сколько клеток будет через 3, 6, 9, ..., 24 часа, если первоначально была одна амеба.
 ameba = 1
 for i in range(3, 25, 3):
     ameba *= 2
     print(f"{i} tunni pärast: {ameba} rakku")
 #ül 5
+#Губка Боб жарит котлеты. Всего у него К котлет, на одну сковородку помещается М котлет.
+
+Расчитать сколько сковородок "полных" надо пожарить и сколько котлет останется еще дожарить на последней. Оформите решение через цикл, используя только вычитание.
 try:
     K = int(input("Mitu kotletti: "))
     M = int(input("Mitu kotletti ühel pannil: "))
