@@ -41,7 +41,7 @@ opilased = random.randint(5, 30)
 minhinn = 100  
 maxhinn = 1  
 
-for _ in range(opilased):
+for i in range(opilased):
     hinne = random.randint(1, 100)
     minhinn = min(minhinn, hinne)
     maxhinn = max(maxhinn, hinne)
