@@ -1,16 +1,19 @@
 #Kontrolltöö "Kordused"
 #V4
-# 1 ül
-n = int(input('Sisesta kui palju kordi (1-9): '))
+#1
+try:
+    n = int(input('Sisesta kui palju kordi (1-9): '))
 
-if 1 <= n <= 9:
-    tigr = ''' ^---^  
+    if 1 <= n <= 9:
+        tigr = ''' ^---^  
 ( o o )  
  ! = !/)  
 '''
-    print(tigr  * n)  
-else:
-    print('Seda ei saa teha! Sisestage number vahemikus 1 kuni 9.')
+        print(tigr * n)
+    else:
+        print('Seda ei saa teha! Sisestage number vahemikus 1 kuni 9.')
+except ValueError:
+    print('Sisestage palun kehtiv täisarv!')
 # 1 ül(второй вариант)
 n=int(input("Sisestage number vahemikus 1 kuni 9:"))
 for i in range(n):
