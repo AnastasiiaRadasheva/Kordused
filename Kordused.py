@@ -15,16 +15,7 @@ try:
         print('Seda ei saa teha! Sisestage number vahemikus 1 kuni 9.')
 except ValueError:
     print('Sisestage palun kehtiv täisarv!')
-# 1 ül(второй вариант)
-n=int(input("Sisestage number vahemikus 1 kuni 9:"))
-for i in range(n):
-    print(" ^---^  ",end="  ")
-print( )
-for i in range(n):
-    print("( o o )",end="   ")
-print( )
-for i in range(n):
-    print("! = !/)",end="   ")
+
 #ül 2
 #Вывести степени натуральных чисел, не превосходящие данного числа n*100. Пользователь задает показатель степени и число n.
 kraad = int(input('kraad'))
